@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Add mark</title>
+      <link rel="stylesheet" href="{% static 'css/add_mark.css' %}">
+   </head>
+</html>
+<body>
+   <nav>
+      <a href="{% url 'candidate_list' %}">CANDIDATE LIST</a>
+      <a href="#">ADD MARK</a>
+   </nav>
+   <h1>You can only once mark the same task for particular candidate</h1>
+   <h2>Add mark for task for particular candidate</h2>
+   
+   {{ error }}
+   {{ success }}
+
+   {% block content %}
+      <form action="/api/add-mark" method="POST">{% csrf_token %}
+         {{ form.as_p }}
+         <input type="submit" value="Save">
+      </form>
+   {% endblock %}
+
+</body>

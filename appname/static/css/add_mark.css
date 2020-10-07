@@ -57,3 +57,20 @@ form button {
    border-radius: 4px;
    outline: 0;
 }
+
+.error, .success {
+   width: 50%;
+   margin: 40px 0 40px 40px;
+   padding: 40px;
+   border-radius: 4px;
+}
+
+.error {
+   background-color: #F8D7DA;
+   color: #974F56;   
+}
+
+.success {
+   background-color: #D4EDDA;
+   color: #6E9D79;   
+}

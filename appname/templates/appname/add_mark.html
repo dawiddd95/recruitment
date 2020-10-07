@@ -15,8 +15,12 @@
    <h1>You can only once mark the same task for particular candidate</h1>
    <h2>Add mark for task for particular candidate</h2>
    
-   {{ error }}
-   {{ success }}
+   <div class='error'>
+      {{ error }}
+   </div>
+   <div class='success'>
+      {{ success }}
+   </div>
 
    {% block content %}
       <form action="/api/add-mark" method="POST">{% csrf_token %}

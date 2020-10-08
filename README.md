@@ -25,6 +25,10 @@ DATABASES = {
 ```bash
 python manage.py migrate
 ```
+5. Run command to create super user
+```bash
+python manage.py createsuperuser
+```
 
 ### Running
 

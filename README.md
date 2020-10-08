@@ -37,3 +37,6 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+### Using
+1. go to root URL to see all candidates
+2. go to /api/add-mark to add new grade
